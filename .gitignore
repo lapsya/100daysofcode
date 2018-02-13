@@ -1,2 +1,6 @@
 # ignore text files with sensitive information
 *.txt
+
+# ignore keys and tokens
+*.key
+*.token
