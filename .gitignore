@@ -4,3 +4,7 @@
 # ignore keys and tokens
 *.key
 *.token
+
+# ignore potentially heavy videos and gifs
+*.gif
+*.mp4
