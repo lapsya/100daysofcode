@@ -57,7 +57,7 @@ except IndexError:
 # create YouTube video stream
 vid = YouTube(link)
 
-vid_name = vid.title.replace("'", '').replace('|', '')
+vid_name = vid.title.replace("'", '').replace('|', '').replace('.', '')
 vid_stream = vid.streams.filter(file_extension='mp4').first()
 
 
