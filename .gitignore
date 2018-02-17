@@ -8,3 +8,6 @@
 # ignore potentially heavy videos and gifs
 *.gif
 *.mp4
+
+# ignore python notebook checkpoints
+*.ipynb_checkpoints
