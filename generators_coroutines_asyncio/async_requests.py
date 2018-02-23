@@ -2,25 +2,30 @@ import asyncio
 import random
 import requests
 
-async def make_request(url):
+import aiohttp
 
-    await asyncio.sleep(random.random())
+async def make_request(session, url, cor_id):
 
-    loop = asyncio.get_event_loop()
-    url_task = loop.run_in_executor(None, requests.head, 'http://www.google.com')
-    response = await url_task
+    await asyncio.sleep(random.random() * 5)
 
-    return 'URL "{}" was returned at "{}"'.format(url, response.headers['date'])
+    async with session.get(url) as response:
+        headers = response.headers
+
+
+    return '{}: URL "{}" was returned at "{}"'.format(cor_id, url, headers['date'])
 
 
 async def pool(urls):
-    tasks = [make_request(url) for url in urls]
-    for task in asyncio.as_completed(tasks):
-        result = await task
-        print(result)
+    async with aiohttp.ClientSession() as session:
+        tasks = [make_request(session, url=enum[1], cor_id=enum[0]) for enum in enumerate(urls)]
+        for task in asyncio.as_completed(tasks):
+            result = await task
+            print(result)
 
 urls = ['https://vk.com', 'https://google.com', 'https://twitter.com',
-        'https://androidpolice.com', 'https://9gag.com']
+        'https://androidpolice.com', 'https://9gag.com'] * 20
+
+#urls = ['https://google.com'] * 100
 event_loop = asyncio.get_event_loop()
 event_loop.run_until_complete(pool(urls))
 event_loop.close()
