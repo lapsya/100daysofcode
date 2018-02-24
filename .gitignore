@@ -5,9 +5,10 @@
 *.key
 *.token
 
-# ignore potentially heavy videos and gifs
+# ignore potentially heavy media
 *.gif
 *.mp4
+*.jpg
 
 # ignore python notebook checkpoints
 *.ipynb_checkpoints
