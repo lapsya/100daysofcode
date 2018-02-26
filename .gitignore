@@ -12,3 +12,6 @@
 
 # ignore python notebook checkpoints
 *.ipynb_checkpoints
+
+# ignore potentially heavy datasets
+*.csv
