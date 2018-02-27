@@ -16,3 +16,5 @@ My #100DaysOfCode repo
 | 11  | AP updater Telegram bot | exploring `telegram` module |
 | 12  | Fixes for not-so-asynchronous URL-fetcher from day 11 | `aiohttp` module |
 | 13  | Script to asynchronously download images & comparison to sync | `aiofiles` module |
+| 14  | Script displaying contents of a pandas DataFrame in a widget | `ipywidgets` module |
+| 15  | Script that looks for RSS URLs on an html page| regular expressions, `BeautifulSoup`|
