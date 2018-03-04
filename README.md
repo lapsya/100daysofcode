@@ -20,3 +20,4 @@ My #100DaysOfCode repo
 | 15  | Script that looks for RSS URLs on an html page| regular expressions, `BeautifulSoup`|
 | 16  | Hello world from Kotlin (script to check if input value is in the input range) | basic syntax, i/o |
 | 17  | Exploring functions in Kotlin & command line arguments | basic syntax, functions |
+| 18  | Maps, classes and other stuff in Kotlin | more syntax |
