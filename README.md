@@ -18,6 +18,7 @@ My #100DaysOfCode repo
 | 13  | Script to asynchronously download images & comparison to sync | `aiofiles` module |
 | 14  | Script displaying contents of a pandas DataFrame in a widget | `ipywidgets` module |
 | 15  | Script that looks for RSS URLs on an html page| regular expressions, `BeautifulSoup`|
-| 16  | Hello world from Kotlin (script to check if input value is in the input range) | basic syntax, i/o |
+| 16  | "Hello, world!" from Kotlin (script to check if input value is in the input range) | basic syntax, i/o |
 | 17  | Exploring functions in Kotlin & command line arguments | basic syntax, functions |
 | 18  | Maps, classes and other stuff in Kotlin | more syntax |
+| 19  | "Hello, world!" Android app | basics of Android app structure & layout |
