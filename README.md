@@ -22,3 +22,6 @@ My #100DaysOfCode repo
 | 17  | Exploring functions in Kotlin & command line arguments | basic syntax, functions |
 | 18  | Maps, classes and other stuff in Kotlin | more syntax |
 | 19  | "Hello, world!" Android app | basics of Android app structure & layout |
+| 20  | `View`s actions in Kotlin | a deeper dive into Android app structure |
+| 21  | Interaction between `View`s actions | a deeper dive into Android app structure |
+| 22  | More Kotlin practice | Null safety and constructors |
