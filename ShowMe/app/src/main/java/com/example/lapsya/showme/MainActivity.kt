@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
     fun hello_btn_click(v: View) {
         val input_text: EditText = findViewById(R.id.edit_text_name_input)
-        Toast.makeText(this, input_text.getText(), Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Hello, " + input_text.getText(), Toast.LENGTH_LONG).show()
     }
 
 }
