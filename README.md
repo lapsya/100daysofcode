@@ -25,3 +25,4 @@ My #100DaysOfCode repo
 | 20  | `View`s actions in Kotlin | a deeper dive into Android app structure |
 | 21  | Interaction between `View`s actions | a deeper dive into Android app structure |
 | 22  | More Kotlin practice | Null safety and constructors |
+| 23  | More Kotlin practice | Properties and more constructors |

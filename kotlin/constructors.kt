@@ -1,10 +1,7 @@
-class Person(val firstName: String, var lastName: String, var middleName: String?) {
-    var totalLength: Int = 0
-
+class Person(var firstName: String, var lastName: String, var middleName: String? = null, var age: Int? = null) {
     init {
         print("Hello,")
-        for (name in listOf(firstName, middleName, lastName)) {
-            totalLength += name?.length ?: 0
+        for (name in listOf(this.firstName, this.middleName, this.lastName)) {
             if (name != null) {
                 print(" $name")
             }
@@ -12,21 +9,36 @@ class Person(val firstName: String, var lastName: String, var middleName: String
         println("!")
     }
 
-    var age: Int = 0
-    constructor(firstName: String, lastName: String, middleName: String?, age: Int): this(firstName, lastName, middleName) {
-        this.age = age
-        println(age)
+    constructor(nameString: String): this(nameString.split(" ").component1(),
+                                            nameString.split(" ").component2()) {
+        println("You've been initialized from a string")
     }
 
+    var totalLength = 0
+        get() {
+            var totalLength = 0
+            for (name in listOf(this.firstName, this.middleName, this.lastName)) {
+                totalLength += name?.length ?: 0
+            }
+            return totalLength
+        }
+
+    val hasMiddleName: Boolean
+        get() = this.middleName != null
+
+    val hasAge
+        get() = this.age != null
 }
 
 fun main(args: Array<String>) {
-    val p = Person("Maria", "Summer", null)
+    val p1 = Person("Maria", "Summer")
     val p2 = Person("Maria", "Winter", "January", 21)
+    val p3 = Person("Maria Spring")
 
-    //println(p2.firstName)
-    println(p.firstName)
-    println(p.totalLength)
-
-    println(p2.age)
+    for (person in listOf(p1, p2, p3)) {
+        println("Has middle name: ${person.hasMiddleName}")
+        println("Total name length: ${person.totalLength}")
+        println("Has age: ${person.hasAge}")
+        println("---")
+    }
 }
