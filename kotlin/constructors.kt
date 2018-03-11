@@ -14,13 +14,9 @@ class Person(var firstName: String, var lastName: String, var middleName: String
         println("You've been initialized from a string")
     }
 
-    var totalLength = 0
+    val totalLength: Int
         get() {
-            var totalLength = 0
-            for (name in listOf(this.firstName, this.middleName, this.lastName)) {
-                totalLength += name?.length ?: 0
-            }
-            return totalLength
+            return listOfNotNull(this.firstName, this.middleName, this.lastName).sumBy { it.length }
         }
 
     val hasMiddleName: Boolean
