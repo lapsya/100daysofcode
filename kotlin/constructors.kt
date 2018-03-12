@@ -1,17 +1,19 @@
-class Person(var firstName: String, var lastName: String, var middleName: String? = null, var age: Int? = null) {
+fun Any?.notnull(): Boolean {
+    return this != null
+}
+
+class Person(
+    var firstName: String,
+    var lastName: String,
+    var middleName: String? = null,
+    private var _age: Int? = null
+) {
     init {
         print("Hello,")
-        for (name in listOf(this.firstName, this.middleName, this.lastName)) {
-            if (name != null) {
-                print(" $name")
-            }
+        for (name in listOfNotNull(this.firstName, this.middleName, this.lastName)) {
+            print(" $name")
         }
         println("!")
-    }
-
-    constructor(nameString: String): this(nameString.split(" ").component1(),
-                                            nameString.split(" ").component2()) {
-        println("You've been initialized from a string")
     }
 
     val totalLength: Int
@@ -19,11 +21,18 @@ class Person(var firstName: String, var lastName: String, var middleName: String
             return listOfNotNull(this.firstName, this.middleName, this.lastName).sumBy { it.length }
         }
 
-    val hasMiddleName: Boolean
-        get() = this.middleName != null
+    val hasMiddleName
+        get() = this.middleName.notnull()
 
-    val hasAge
-        get() = this.age != null
+    val hasAge by lazy {
+        this._age.notnull()
+    }
+
+    constructor(nameString: String) : this(nameString.split(" ").component1(),
+                                            nameString.split(" ").component2()) {
+        println("You've been initialized from a string")
+    }
+
 }
 
 fun main(args: Array<String>) {

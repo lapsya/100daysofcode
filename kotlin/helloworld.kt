@@ -3,11 +3,11 @@ fun main(args: Array<String>) {
 
     try {
         val values = readLine()!!.split(' ')
-        println("Looking for ${values[0]} in range [${values[1]}, ${values[2]}]")
         val range = values[1].toInt()..values[2].toInt()
         val lookup = values[0].toInt()
 
-        var found: Boolean = false
+        println("Looking for $lookup in range $range")
+        var found = false
         label@ for(j in range) {
             if (j == lookup) {
                 println("Found it!")
@@ -18,11 +18,11 @@ fun main(args: Array<String>) {
             }
         }
 
-        if (found == false) {
+        if (!found) {
             println("Not found")
         }
 
-    } catch(e : Exception) {
+    } catch(e: Exception) {
         println("Exception $e")
     }
 

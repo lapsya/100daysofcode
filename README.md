@@ -26,3 +26,5 @@ My #100DaysOfCode repo
 | 21  | Interaction between `View`s actions | a deeper dive into Android app structure |
 | 22  | More Kotlin practice | Null safety and constructors |
 | 23  | More Kotlin practice | Properties and more constructors |
+| 24  | More Kotlin practice | Reading about backing fields |
+| 25  | Previous code modified according to the official coding conventions | Kotlin coding conventions |

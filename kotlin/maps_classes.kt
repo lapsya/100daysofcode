@@ -1,5 +1,5 @@
 object Greeter {
-    fun hello() {
+    fun greet() {
         println("Hello, world!")
     }
 }
@@ -24,19 +24,19 @@ fun main(args: Array<String>) {
 
 
         data class ScreenSize(var width_res: Int, var height_res: Int, val diag: Double)
-        fun print_screen_size(screen: ScreenSize) {
+        fun printScreenSize(screen: ScreenSize) {
             println("Screen resolution is ${screen.width_res} x ${screen.height_res}, with ${screen.diag}'' diagonal")
         }
 
-        val my_monitor = ScreenSize(1920, 1080, 12.5)
-        print_screen_size(my_monitor)
-        with (my_monitor) {
+        val myMonitor = ScreenSize(1920, 1080, 12.5)
+        printScreenSize(myMonitor)
+        with (myMonitor) {
             width_res  = 1600
             height_res = 900
         }
-        print_screen_size(my_monitor)
+        printScreenSize(myMonitor)
 
-        Greeter.hello()
+        Greeter.greet()
     }
     catch (err: Throwable) {
         println("Error!")
