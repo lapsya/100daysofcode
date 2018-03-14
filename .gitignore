@@ -15,6 +15,7 @@
 
 # ignore potentially heavy datasets
 *.csv
+graph_clustering/graph_vertex_cache.json
 
 # Built application files
 *.apk
