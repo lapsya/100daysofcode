@@ -29,3 +29,4 @@ My #100DaysOfCode repo
 | 24  | More Kotlin practice | Reading about backing fields |
 | 25  | Previous code modified according to the official coding conventions | Kotlin coding conventions |
 | 26  | Added more classes and inheritance to the same code file | abstract classes, interfaces, inheritance, extensions, pass-by-value |
+| 27  | Updated `vk` graph with more records, new K-Means class for complex vectors (needs debugging) | better code style, closer look at `numpy` |
