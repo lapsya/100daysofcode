@@ -32,3 +32,4 @@ My #100DaysOfCode repo
 | 27  | Updated `vk` graph with more records, new K-Means class for complex vectors (needs debugging) | better code style, closer look at `numpy` |
 | 28  | First draft of RSS reader in Kotlin | getting to know IntelliJ and Kotlin(Java) projects |
 | 29  | JAR of the first Kotlin project (RSS reader template) | IntelliJ project structure and output |
+| 30  | Followed through an NN tutorial notebook | getting to know neural networks |
