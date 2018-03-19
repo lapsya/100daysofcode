@@ -33,3 +33,4 @@ My #100DaysOfCode repo
 | 28  | First draft of RSS reader in Kotlin | getting to know IntelliJ and Kotlin(Java) projects |
 | 29  | JAR of the first Kotlin project (RSS reader template) | IntelliJ project structure and output |
 | 30  | Followed through an NN tutorial notebook | getting to know neural networks |
+| 31  | Finished ComplexKMeans | `sklearn` already has this algorithm, but it was nice to work through it myself |
