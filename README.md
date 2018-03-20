@@ -34,3 +34,4 @@ My #100DaysOfCode repo
 | 29  | JAR of the first Kotlin project (RSS reader template) | IntelliJ project structure and output |
 | 30  | Followed through an NN tutorial notebook | getting to know neural networks |
 | 31  | Finished ComplexKMeans | `sklearn` already has this algorithm, but it was nice to work through it myself |
+| 32  | Actual graph clustering attempt | it almost works) |
