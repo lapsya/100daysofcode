@@ -35,4 +35,4 @@ My #100DaysOfCode repo
 | 30  | Followed through an NN tutorial notebook | getting to know neural networks |
 | 31  | Finished ComplexKMeans | `sklearn` already has this algorithm, but it was nice to work through it myself |
 | 32  | Actual graph clustering attempt | it almost works) |
-| 33  | Graph visualization | drawing with `networkx` |
+| 33  | Graph visualization & initial clustering | drawing with `networkx` |
