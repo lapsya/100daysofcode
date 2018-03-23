@@ -36,3 +36,4 @@ My #100DaysOfCode repo
 | 31  | Finished ComplexKMeans | `sklearn` already has this algorithm, but it was nice to work through it myself |
 | 32  | Actual graph clustering attempt | it almost works) |
 | 33  | Graph visualization & initial clustering | drawing with `networkx` |
+| 34  | Collected a bigger graph | implemented a new algorithm for graph collection and rolled back to the old one (takes way too long) |
