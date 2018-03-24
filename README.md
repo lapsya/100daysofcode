@@ -37,3 +37,4 @@ My #100DaysOfCode repo
 | 32  | Actual graph clustering attempt | it almost works) |
 | 33  | Graph visualization & initial clustering | drawing with `networkx` |
 | 34  | Collected a bigger graph | implemented a new algorithm for graph collection and rolled back to the old one (takes way too long) |
+| 35  | Watched O'Reilly Kotlin course | A more in-depth look into Kotlin features |
