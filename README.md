@@ -39,3 +39,4 @@ My #100DaysOfCode repo
 | 34  | Collected a bigger graph | implemented a new algorithm for graph collection and rolled back to the old one (takes way too long) |
 | 35  | Watched O'Reilly Kotlin course | A more in-depth look into Kotlin features |
 | 36  | Finished O'Reilly Kotlin course | Java interoperability in Kotlin |
+| 37  | Kotlin RSS reader structure | Still need to add HTTP requests and emailing |
