@@ -40,3 +40,4 @@ My #100DaysOfCode repo
 | 35  | Watched O'Reilly Kotlin course | A more in-depth look into Kotlin features |
 | 36  | Finished O'Reilly Kotlin course | Java interoperability in Kotlin |
 | 37  | Kotlin RSS reader structure | Still need to add HTTP requests and emailing |
+| 38  | Fixed existing functions and added dataset creation logic | realized when to add decorators :)  |
