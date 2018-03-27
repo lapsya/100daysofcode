@@ -17,6 +17,10 @@
 *.csv
 graph_clustering/graph_vertex_cache.json
 
+# ignore my playground-notebook
+graph_clustering/tests.ipynb
+
+
 # Built application files
 *.apk
 *.ap_
