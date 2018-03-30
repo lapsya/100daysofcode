@@ -42,3 +42,4 @@ My #100DaysOfCode repo
 | 37  | Kotlin RSS reader structure | Still need to add HTTP requests and emailing |
 | 38  | Fixed existing functions and added dataset creation logic | realized when to add decorators :) |
 | 39  | Added dataset | may change later |
+| 40  | Fixed dataset creation code and gathered a dataset | will possibly need a re-run |
