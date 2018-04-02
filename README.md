@@ -44,3 +44,4 @@ My #100DaysOfCode repo
 | 39  | Added dataset | may change later |
 | 40  | Fixed dataset creation code and gathered a dataset | will possibly need a re-run |
 | 41  | Finished Advanced Kotlin course | `infix` & `inline` functions, a bit of coroutines, covariance |
+| 42  | Fix graph visualization | add specific function and fix waves labels |
