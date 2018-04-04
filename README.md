@@ -45,3 +45,5 @@ My #100DaysOfCode repo
 | 40  | Fixed dataset creation code and gathered a dataset | will possibly need a re-run |
 | 41  | Finished Advanced Kotlin course | `infix` & `inline` functions, a bit of coroutines, covariance |
 | 42  | Fix graph visualization | add specific function and fix waves labels |
+| 43  | Graph construction fixed, new drawing functions | description of waves is now accurate |
+| 44  | Refactoring of how I work with graphs | custom `Graph` class inhertied from `nx.Graph` and necessary adjustments |
