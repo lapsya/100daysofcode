@@ -13,4 +13,6 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib", "1.2.31"))
     testImplementation("junit:junit:4.12")
+
+    compile("khttp:khttp:0.1.0")
 }

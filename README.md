@@ -47,3 +47,4 @@ My #100DaysOfCode repo
 | 42  | Fix graph visualization | add specific function and fix waves labels |
 | 43  | Graph construction fixed, new drawing functions | description of waves is now accurate |
 | 44  | Refactoring of how I work with graphs | custom `Graph` class inhertied from `nx.Graph` and necessary adjustments |
+| 45  | A test Gradle project & `khttp` in RSSReader | `gradle` project structure, depndencies and a bit of testing |

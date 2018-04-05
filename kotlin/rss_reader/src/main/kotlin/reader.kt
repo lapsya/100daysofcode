@@ -1,5 +1,8 @@
 package reader
 
+import khttp.get
+
+
 data class Post(
         val id: String,
         val updated: String,
@@ -18,7 +21,9 @@ class RSSReader(val url: String) {
     }
 
     fun getFeed(): Feed {
-        // make a request and get the feed
+        val response = get(url)
+        println(response.text)
+
         return Feed(
                 listOf(Post(
                         "482320",
