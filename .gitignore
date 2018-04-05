@@ -20,6 +20,15 @@ graph_clustering/graph_vertex_cache.json
 # ignore my playground-notebook
 graph_clustering/tests.ipynb
 
+# Gradle files
+*.gradle/
+*build/
+
+# IntelliJ
+*.iml
+*.idea/
+*out/
+
 
 # Built application files
 *.apk
@@ -36,10 +45,6 @@ ShowMe/bin/
 ShowMe/gen/
 ShowMe/out/
 
-# Gradle files
-ShowMe/.gradle/
-ShowMe/build/
-
 # Local configuration file (sdk path, etc)
 ShowMe/local.properties
 
@@ -54,14 +59,6 @@ ShowMe/.navigation/
 
 # Android Studio captures folder
 ShowMe/captures/
-
-# IntelliJ
-*.iml
-ShowMe/.idea/workspace.xml
-ShowMe/.idea/tasks.xml
-ShowMe/.idea/gradle.xml
-ShowMe/.idea/dictionaries
-ShowMe/.idea/libraries
 
 # External native build folder generated in Android Studio 2.2 and later
 ShowMe/.externalNativeBuild
