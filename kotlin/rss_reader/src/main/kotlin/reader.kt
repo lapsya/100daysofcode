@@ -1,17 +1,21 @@
 package reader
 
+import com.github.magneticflux.rss.createRssPersister
+import com.github.magneticflux.rss.namespaces.standard.elements.Guid
+import com.github.magneticflux.rss.namespaces.standard.elements.Rss
 import khttp.get
+import org.threeten.bp.ZonedDateTime
 
 
 data class Post(
-        val id: String,
-        val updated: String,
+        val id: Guid,
+        val pubDate: ZonedDateTime?,
         val title: String,
         val author: String,
         val link: String
 )
 
-data class Feed(val posts: List<Post>, val etag: String)
+typealias Feed = MutableList<Post>
 
 class RSSReader(val url: String) {
     var feedBuffer: Feed? = null
@@ -23,32 +27,36 @@ class RSSReader(val url: String) {
     fun getFeed(): Feed {
         val response = get(url)
         println(response.text)
+        val persister = createRssPersister()
+        val rssFeed = persister.read(Rss::class.java, response.text)
 
-        return Feed(
-                listOf(Post(
-                        "482320",
-                        "Mon, 26 Mar 2018 22:39:27 +0000",
-                        "Start the week with 30 temporarily free and 43 on-sale apps",
-                        "Jordan Palmer",
-                        "https://www.androidpolice.com/2018/03/26/app-sales-mar-26-2018/"
-                )),
-                "bc800c70980104f41809d3a294f55d55"
-        )
+        val posts = mutableListOf<Post>()
+        for (item in rssFeed.channel.items) {
+            val post_item = Post(
+                    item.guid ?: Guid("false", "null"),
+                    item.pubDate,
+                    item.title ?: "Uknown title",
+                    item.author ?: "Unknown author",
+                    item.link.toString()
+            )
+            posts.add(post_item)
+        }
+        return posts
 
     }
 
     fun update() {
         val newFeed = getFeed()
 
-        val ids = feedBuffer?.posts?.map { it.id } ?: emptyList()
+        val ids = feedBuffer?.map { it.id } ?: emptyList()
         val newPosts = mutableListOf<Post>()
 
-        for (post in newFeed.posts) {
+        for (post in newFeed) {
             if (ids.isEmpty()) {
                 newPosts.add(post)
                 continue
             }
-            if ((post.id !in ids) or (post.updated != (feedBuffer!!.posts.filter { it.id == post.id }[0]).updated)) {
+            if ((post.id !in ids) or (post.pubDate != (feedBuffer!!.filter { it.id == post.id }[0]).pubDate)) {
                 newPosts.add(post)
             }
         }

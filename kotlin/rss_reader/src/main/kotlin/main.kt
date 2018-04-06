@@ -5,5 +5,5 @@ fun main(args: Array<String>) {
     val a = RSSReader("http://androidpolice.com/feed")
     a.update()
 
-    println(a.feedBuffer?.etag)
+    println(a.feedBuffer)
 }
