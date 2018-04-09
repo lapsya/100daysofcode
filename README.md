@@ -49,3 +49,4 @@ My #100DaysOfCode repo
 | 44  | Refactoring of how I work with graphs | custom `Graph` class inhertied from `nx.Graph` and necessary adjustments |
 | 45  | A test Gradle project & `khttp` in RSSReader | `gradle` project structure, depndencies and a bit of testing |
 | 46  | Added XML parsing to RSSReader | RSS XML parsing |
+| 47  | Added KMeans clustering on the dataset | new function has options for clustering algorithms |
