@@ -50,3 +50,4 @@ My #100DaysOfCode repo
 | 45  | A test Gradle project & `khttp` in RSSReader | `gradle` project structure, depndencies and a bit of testing |
 | 46  | Added XML parsing to RSSReader | RSS XML parsing |
 | 47  | Added KMeans clustering on the dataset | new function has options for clustering algorithms |
+| 48  | Added drawing updates | drawing each clustering result & switch to png |
