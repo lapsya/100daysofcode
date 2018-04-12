@@ -52,3 +52,4 @@ My #100DaysOfCode repo
 | 47  | Added KMeans clustering on the dataset | new function has options for clustering algorithms |
 | 48  | Added drawing updates | drawing each clustering result & switch to png |
 | 49  | Added dataset TSNE visualization | 2d and 3d looks at the data |
+| 50  | Added new clustering and drawing updates | DBSCAN algorithm |
