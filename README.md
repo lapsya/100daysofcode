@@ -53,3 +53,5 @@ My #100DaysOfCode repo
 | 48  | Added drawing updates | drawing each clustering result & switch to png |
 | 49  | Added dataset TSNE visualization | 2d and 3d looks at the data |
 | 50  | Added new clustering and drawing updates | DBSCAN algorithm |
+| --- | break | --- |
+| 51  | Added dataset scaling and cluster information export for profiling | `StandardScaler` used for the dataset |
